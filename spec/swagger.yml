@@ -1,0 +1,38 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/jammacn/jm-miniapp/1.0.0
+info:
+  version: "1.0.0"
+  title: jm-miniapp-api
+  description: 微信小程序系统API
+paths:
+  /miniapp/auth/{code}:
+    get:
+      description: 查询对应 openid 和 unionid
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 查询结果
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthInfo'
+components:
+  schemas:
+    AuthInfo:
+      type: object
+      properties:
+        openid:
+          type: string
+          example: 'root'
+        unionid:
+          type: string
+          example: '123'
+      description: 结果信息
