@@ -1,11 +1,11 @@
-# jm-miniapp
+# jm-weapp
 
-general miniapp service
+general weapp service
 
 ## use:
 
 ```javascript
-var s = require('jm-miniapp')();
+var s = require('jm-weapp')();
 ```
 
 ## run:

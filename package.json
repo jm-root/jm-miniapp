@@ -1,7 +1,7 @@
 {
-  "name": "jm-miniapp",
+  "name": "jm-weapp",
   "version": "1.0.0",
-  "description": "general miniapp service",
+  "description": "general weapp service",
   "main": "./lib/index",
   "scripts": {
     "start": "jm-server",
@@ -10,20 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jm-root/jm-miniapp.git"
+    "url": "https://github.com/jm-root/jm-weapp.git"
   },
   "keywords": [
     "javascript",
-    "jm-miniapp"
+    "jm-weapp"
   ],
   "author": {
     "name": "Jeff YU"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jm-root/jm-miniapp/issues"
+    "url": "https://github.com/jm-root/jm-weapp/issues"
   },
-  "homepage": "https://github.com/jm-root/jm-miniapp",
+  "homepage": "https://github.com/jm-root/jm-weapp",
   "dependencies": {
     "axios": "^0.18.0",
     "jm-server": "^1.0.6"

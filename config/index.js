@@ -6,7 +6,7 @@ let config = {
     appid: 'wxe11eaeeac8341a58',
     appsecret: 'eb25014cd299d6960b66933321fec9fb',
     modules: {
-      miniapp: {
+      weapp: {
         module: process.cwd() + '/lib'
       }
     }
@@ -16,7 +16,7 @@ let config = {
     lng: 'zh_CN',
     redis: 'redis://redis.db',
     modules: {
-      miniapp: {
+      weapp: {
         module: process.cwd() + '/lib'
       }
     }

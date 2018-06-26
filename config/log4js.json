@@ -11,11 +11,11 @@
     },
     {
       "type": "dateFile",
-      "filename": "logs/miniapp",
+      "filename": "logs/weapp",
       "pattern": "-yyyyMMdd.log",
       "alwaysIncludePattern": true,
       "category": [
-        "miniapp"
+        "weapp"
       ]
     },
     {
@@ -24,6 +24,6 @@
   ],
   "replaceConsole": true,
   "levels": {
-    "miniapp": "info"
+    "weapp": "info"
   }
 }

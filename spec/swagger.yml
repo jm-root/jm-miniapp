@@ -2,13 +2,13 @@ openapi: 3.0.0
 # Added by API Auto Mocking Plugin
 servers:
   - description: SwaggerHub API Auto Mocking
-    url: https://virtserver.swaggerhub.com/jammacn/jm-miniapp/1.0.0
+    url: https://virtserver.swaggerhub.com/jammacn/jm-weapp/1.0.0
 info:
   version: "1.0.0"
-  title: jm-miniapp-api
+  title: jm-weapp-api
   description: 微信小程序系统API
 paths:
-  /miniapp/auth/{code}:
+  /weapp/auth/{code}:
     get:
       description: 查询对应 openid 和 unionid
       parameters:
