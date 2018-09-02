@@ -24,6 +24,21 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/AuthInfo'
+  /weapp/decrypt:
+    post:
+      description: 解密用户信息数据
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EncryptedData'
+      responses:
+        '200':
+          description: 结果
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserInfo'
 components:
   schemas:
     AuthInfo:
@@ -35,4 +50,39 @@ components:
         unionid:
           type: string
           example: '123'
+      description: 结果信息
+    EncryptedData:
+      type: object
+      properties:
+        sessionKey:
+          type: string
+        iv:
+          type: string
+        encryptedData:
+          type: string
+      description: 加密的数据
+    UserInfo:
+      type: object
+      properties:
+        openid:
+          type: string
+          example: 'ognMm0dIGjumkkAuAFCSsu0-Q0Fg'
+        unionid:
+          type: string
+          example: 'oa_ARs19vTALifg9hs4fgdndSyl0'
+        nickName:
+          type: string
+        gender:
+          type: integer
+          format: int32
+        language:
+          type: string
+        city:
+          type: string
+        province:
+          type: string
+        country:
+          type: string
+        avatarUrl:
+          type: string
       description: 结果信息
