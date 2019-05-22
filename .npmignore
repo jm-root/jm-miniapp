@@ -6,3 +6,4 @@ docs
 logs
 tests
 spec
+yarn.lock
