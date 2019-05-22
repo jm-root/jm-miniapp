@@ -21,3 +21,5 @@ npm start
 appid 微信小程序appid
 
 appsecret 微信小程序appsecret
+
+redis redis服务器uri, 用于保存accessToken
