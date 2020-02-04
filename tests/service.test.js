@@ -13,8 +13,7 @@ test('getAccessToken', async () => {
 })
 
 test('getWxaCodeUnlimit', async () => {
-  const doc = await service.getWxaCodeUnlimit({scene: '123'})
+  const doc = await service.getWxaCodeUnlimit({ scene: '123' })
   console.log(doc)
   expect(doc).toBeTruthy()
 })
-
