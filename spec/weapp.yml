@@ -1,14 +1,15 @@
 openapi: 3.0.0
-# Added by API Auto Mocking Plugin
 servers:
-  - description: SwaggerHub API Auto Mocking
-    url: https://virtserver.swaggerhub.com/jammacn/jm-weapp/1.0.0
+  - url: 'https://api.jamma.cn/weapp'
+  - url: 'http://gateway.l.jamma.cn/weapp'
+  - url: 'http://api.l.jamma.cn/weapp'
+  - url: 'http://localhost:3000/weapp'
 info:
-  version: "1.0.0"
-  title: jm-weapp-api
+  version: 1.0.4
+  title: weapp
   description: 微信小程序系统API
 paths:
-  /weapp/auth/{code}:
+  /auth/{code}:
     get:
       description: 查询对应 openid 和 unionid
       parameters:
@@ -24,7 +25,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/AuthInfo'
-  /weapp/decrypt:
+  /decrypt:
     post:
       description: 解密用户信息数据
       requestBody:
@@ -39,7 +40,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserInfo'
-  /weapp/token:
+  /token:
     get:
       description: 获取小程序的access_token
       responses:
