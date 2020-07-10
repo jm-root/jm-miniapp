@@ -3,7 +3,7 @@ module.exports = {
   service_name: 'weapp',
   modules: {
     weapp: {
-      module: process.cwd() + '/lib'
+      module: process.cwd()
     }
   }
 }

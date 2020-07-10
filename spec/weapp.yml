@@ -39,6 +39,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/UserInfo'
+  /weapp/token:
+    get:
+      description: 获取小程序的access_token
+      responses:
+        '200':
+          description: 查询结果
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessToken'
 components:
   schemas:
     AuthInfo:
@@ -86,3 +96,9 @@ components:
         avatarUrl:
           type: string
       description: 结果信息
+    AccessToken:
+      type: object
+      properties:
+        token:
+          type: string
+          example: 'c6gPnazGwjcUlwQjkSaD3Cb1Zz6l_6cLC3RzWLEV0QjImreDxJQJZxVIS'
