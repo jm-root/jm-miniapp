@@ -1,7 +1,10 @@
 .idea
 .svn
+.vscode
+.env
 node_modules
 docs
 logs
 yarn.lock
 development.js
+package-lock.json
